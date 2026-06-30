@@ -11,7 +11,7 @@ strikes:
 expiries:
   near:
     code: "26JUN"        # symbol fragment used to build the Fyers symbol
-    date: "2026-06-25"   # actual calendar expiry date (needed for time-to-expiry in Greeks) -- CONFIRM this is correct
+    date: "2026-06-30"   # actual calendar expiry date (needed for time-to-expiry in Greeks) -- CONFIRM this is correct
   far:
     code: "26707"        # symbol fragment used to build the Fyers symbol
     date: "2026-07-07"   # actual calendar expiry date -- CONFIRM this is correct
@@ -38,4 +38,4 @@ require_positive_theta: true
 max_ratio_leg: 10          # search ratios up to N:M with N,M <= this
 ratio_tolerance: 0.05       # acceptable net-premium imbalance as a fraction of gross premium
 
-lot_size: 75
+lot_size: 65
