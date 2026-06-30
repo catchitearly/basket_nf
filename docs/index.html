@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Basket P&amp;L — Nifty Options</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
   :root {
     --bg: #0b0e11;
@@ -298,7 +298,32 @@ function chartOptions(yLabel) {
   };
 }
 
-loadData().then(data => data ? render(data) : renderEmpty());
+function renderError(msg) {
+  document.querySelector("main").innerHTML = `
+    <div class="empty-state" style="color:#ff5c5c">
+      Dashboard error: ${msg}<br/>
+      Open the browser console (F12) for full details.
+    </div>`;
+}
+
+if (typeof Chart === "undefined") {
+  renderError("Chart.js failed to load (CDN may be blocked on this network).");
+} else {
+  loadData()
+    .then(data => {
+      if (!data) { renderEmpty(); return; }
+      try {
+        render(data);
+      } catch (err) {
+        console.error(err);
+        renderError(err.message);
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      renderError("Could not fetch pnl_timeseries.json.");
+    });
+}
 </script>
 
 </body>
