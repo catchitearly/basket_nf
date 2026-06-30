@@ -43,26 +43,40 @@ def index_by_ts(candles):
     return {c["ts"]: c for c in candles}
 
 
-def solve_zero_cost_ratio(near_price, far_price, max_leg=10, tolerance=0.05):
-    """Find integers (far_lots, near_lots) <= max_leg minimizing
-    abs(far_lots*far_price - near_lots*near_price) / (far_lots*far_price + near_lots*near_price).
-    Returns (far_lots, near_lots, imbalance_pct) or None if nothing within tolerance."""
-    if near_price <= 0 or far_price <= 0:
-        return None
+def find_atm_strike(spot, strikes):
+    return min(strikes, key=lambda k: abs(k - spot))
 
+
+def find_itm1_strike(spot, strikes, option_type):
+    """One strike in-the-money relative to spot.
+    CE is ITM below spot -> next strike down from ATM.
+    PE is ITM above spot -> next strike up from ATM."""
+    atm = find_atm_strike(spot, strikes)
+    step = strikes[1] - strikes[0] if len(strikes) > 1 else 0
+    candidate = atm - step if option_type == "CE" else atm + step
+    return candidate if candidate in strikes else atm
+
+
+def search_theta_max_ratio(near_g, far_g, max_leg, delta_band, gamma_band):
+    """Search (far_lots, near_lots) pairs up to max_leg; among those satisfying
+    the delta and gamma caps, return the one with the highest net theta."""
     best = None
-    for near_lots in range(1, max_leg + 1):
-        for far_lots in range(1, max_leg + 1):
-            cost_far = far_lots * far_price
-            cost_near = near_lots * near_price
-            gross = cost_far + cost_near
-            imbalance = abs(cost_far - cost_near) / gross
-            if best is None or imbalance < best[2]:
-                best = (far_lots, near_lots, imbalance)
+    for far_lots in range(1, max_leg + 1):
+        for near_lots in range(1, max_leg + 1):
+            net_delta = far_lots * far_g["delta"] - near_lots * near_g["delta"]
+            net_gamma = far_lots * far_g["gamma"] - near_lots * near_g["gamma"]
+            net_theta = far_lots * far_g["theta"] - near_lots * near_g["theta"]
+            net_vega = far_lots * far_g["vega"] - near_lots * near_g["vega"]
 
-    if best and best[2] <= tolerance:
-        return best
-    return best  # return best-effort even if outside tolerance; caller checks
+            if abs(net_delta) > delta_band or abs(net_gamma) > gamma_band:
+                continue
+            if best is None or net_theta > best["net_theta"]:
+                best = {
+                    "far_lots": far_lots, "near_lots": near_lots,
+                    "net_delta": net_delta, "net_gamma": net_gamma,
+                    "net_theta": net_theta, "net_vega": net_vega,
+                }
+    return best
 
 
 def analyze_leg(price, S, K, expiry_date, current_ts, r, option_type):
@@ -83,9 +97,11 @@ def scan_date(date_str, day_data, cfg):
     far_expiry_date = ddate.fromisoformat(cfg["expiries"]["far"]["date"])
     lot_size = cfg["lot_size"]
     delta_band = cfg["delta_neutral_band"]
+    gamma_band = cfg["gamma_band"]
     require_pos_theta = cfg["require_positive_theta"]
     max_leg = cfg["max_ratio_leg"]
-    tolerance = cfg["ratio_tolerance"]
+    strike_modes = cfg["strike_modes"]
+    option_types = cfg["option_types"]
 
     underlying = index_by_ts(day_data["underlying"]["candles"])
     if not underlying:
@@ -94,29 +110,25 @@ def scan_date(date_str, day_data, cfg):
     timestamps = sorted(underlying.keys())
     candidates = []
 
-    for opt_type in ("CE", "PE"):
-        for strike in strikes:
-            near_key = f"near_{strike}_{opt_type}"
-            far_key = f"far_{strike}_{opt_type}"
-            if near_key not in day_data or far_key not in day_data:
-                continue
-            near_candles = index_by_ts(day_data[near_key]["candles"])
-            far_candles = index_by_ts(day_data[far_key]["candles"])
+    for ts in timestamps:
+        S = underlying[ts]["close"]
 
-            for ts in timestamps:
+        for opt_type in option_types:
+            for mode in strike_modes:
+                strike = find_atm_strike(S, strikes) if mode == "ATM" else find_itm1_strike(S, strikes, opt_type)
+
+                near_key = f"near_{strike}_{opt_type}"
+                far_key = f"far_{strike}_{opt_type}"
+                if near_key not in day_data or far_key not in day_data:
+                    continue
+                near_candles = index_by_ts(day_data[near_key]["candles"])
+                far_candles = index_by_ts(day_data[far_key]["candles"])
                 if ts not in near_candles or ts not in far_candles:
                     continue
-                S = underlying[ts]["close"]
+
                 near_price = near_candles[ts]["close"]
                 far_price = far_candles[ts]["close"]
                 if near_price <= 0 or far_price <= 0:
-                    continue
-
-                ratio = solve_zero_cost_ratio(near_price, far_price, max_leg, tolerance)
-                if ratio is None:
-                    continue
-                far_lots, near_lots, imbalance = ratio
-                if imbalance > tolerance:
                     continue
 
                 near_g = analyze_leg(near_price, S, strike, near_expiry_date, ts, r, opt_type)
@@ -124,46 +136,48 @@ def scan_date(date_str, day_data, cfg):
                 if near_g is None or far_g is None:
                     continue
 
-                # Buy far, sell near
-                net_delta = far_lots * far_g["delta"] - near_lots * near_g["delta"]
-                net_theta = far_lots * far_g["theta"] - near_lots * near_g["theta"]
-                net_vega = far_lots * far_g["vega"] - near_lots * near_g["vega"]
+                ratio = search_theta_max_ratio(near_g, far_g, max_leg, delta_band, gamma_band)
+                if ratio is None:
+                    continue
+                if require_pos_theta and ratio["net_theta"] <= 0:
+                    continue
 
-                delta_neutral = abs(net_delta) <= delta_band
-                theta_ok = (net_theta > 0) if require_pos_theta else True
+                far_lots, near_lots = ratio["far_lots"], ratio["near_lots"]
+                net_cost = far_lots * far_price - near_lots * near_price  # +debit / -credit
 
-                if delta_neutral and theta_ok:
-                    candidates.append({
-                        "ts": ts,
-                        "strike": strike,
-                        "option_type": opt_type,
-                        "far_lots": far_lots,
-                        "near_lots": near_lots,
-                        "near_price": near_price,
-                        "far_price": far_price,
-                        "imbalance_pct": round(imbalance * 100, 2),
-                        "net_delta": round(net_delta, 4),
-                        "net_theta": round(net_theta, 2),
-                        "net_vega": round(net_vega, 2),
-                        "near_iv": round(near_g["iv"] * 100, 2),
-                        "far_iv": round(far_g["iv"] * 100, 2),
-                    })
+                candidates.append({
+                    "ts": ts,
+                    "strike": strike,
+                    "strike_mode": mode,
+                    "option_type": opt_type,
+                    "spot": round(S, 2),
+                    "far_lots": far_lots,
+                    "near_lots": near_lots,
+                    "near_price": near_price,
+                    "far_price": far_price,
+                    "net_cost": round(net_cost, 2),
+                    "net_delta": round(ratio["net_delta"], 4),
+                    "net_gamma": round(ratio["net_gamma"], 5),
+                    "net_theta": round(ratio["net_theta"], 2),
+                    "net_vega": round(ratio["net_vega"], 2),
+                    "near_iv": round(near_g["iv"] * 100, 2),
+                    "far_iv": round(far_g["iv"] * 100, 2),
+                })
 
     if not candidates:
         return {"date": date_str, "candidates": [], "best": None, "pnl_curve": []}
 
-    # rank: highest net_theta per unit net_vega (more decay per unit of vol risk)
+    # rank: highest net theta per unit net vega (more decay per unit of vol risk)
     for c in candidates:
         c["score"] = c["net_theta"] / (abs(c["net_vega"]) + 1e-6)
     candidates.sort(key=lambda c: c["score"], reverse=True)
     best = candidates[0]
 
-    # simulate holding the best candidate from its entry ts to square-off
     pnl_curve = simulate_pnl(best, day_data, cfg, timestamps)
 
     return {
         "date": date_str,
-        "candidates": candidates[:20],   # cap for output size
+        "candidates": candidates[:20],
         "best": best,
         "pnl_curve": pnl_curve,
     }

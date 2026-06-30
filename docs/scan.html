@@ -52,7 +52,7 @@
   <div class="panel">
     <h2>All Qualifying Candidates (top 20)</h2>
     <table id="candTable">
-      <thead><tr><th>Time</th><th>Strike</th><th>Type</th><th>Ratio (far:near)</th><th>Imbalance%</th><th>Net Δ</th><th>Net Θ</th><th>Score</th></tr></thead>
+      <thead><tr><th>Time</th><th>Strike</th><th>Mode</th><th>Type</th><th>Ratio (far:near)</th><th>Net Cost</th><th>Net Δ</th><th>Net Γ</th><th>Net Θ</th><th>Score</th></tr></thead>
       <tbody></tbody>
     </table>
   </div>
@@ -107,12 +107,14 @@ function renderDay(day) {
   } else {
     const b = day.best;
     bestBody.innerHTML = `
-      <tr><td>Strike / Type</td><td>${b.strike} ${b.option_type}</td></tr>
+      <tr><td>Strike / Type</td><td>${b.strike} ${b.option_type} (${b.strike_mode})</td></tr>
       <tr><td>Ratio (buy far : sell near)</td><td>${b.far_lots} : ${b.near_lots}</td></tr>
       <tr><td>Entry time</td><td>${fmtTime(b.ts)}</td></tr>
+      <tr><td>Spot at entry</td><td>${b.spot}</td></tr>
       <tr><td>Far / Near entry price</td><td>${b.far_price.toFixed(2)} / ${b.near_price.toFixed(2)}</td></tr>
-      <tr><td>Premium imbalance</td><td>${b.imbalance_pct}%</td></tr>
+      <tr><td>Net cost (per share, +debit/-credit)</td><td>${b.net_cost}</td></tr>
       <tr><td>Net delta</td><td>${b.net_delta}</td></tr>
+      <tr><td>Net gamma</td><td>${b.net_gamma}</td></tr>
       <tr><td>Net theta (₹/day equiv)</td><td>${b.net_theta}</td></tr>
       <tr><td>Near IV / Far IV</td><td>${b.near_iv}% / ${b.far_iv}%</td></tr>
       <tr><td>Score (theta/vega)</td><td>${b.score.toFixed(3)}</td></tr>
@@ -151,13 +153,15 @@ function renderDay(day) {
     <tr>
       <td>${fmtTime(c.ts)}</td>
       <td>${c.strike}</td>
+      <td>${c.strike_mode}</td>
       <td>${c.option_type}</td>
       <td>${c.far_lots}:${c.near_lots}</td>
-      <td>${c.imbalance_pct}</td>
-      <td class="${Math.abs(c.net_delta) < 0.02 ? 'pos':''}">${c.net_delta}</td>
+      <td>${c.net_cost}</td>
+      <td>${c.net_delta}</td>
+      <td>${c.net_gamma}</td>
       <td class="${c.net_theta > 0 ? 'pos':'neg'}">${c.net_theta}</td>
       <td>${c.score.toFixed(3)}</td>
-    </tr>`).join("") : `<tr><td colspan="8">No candidates.</td></tr>`;
+    </tr>`).join("") : `<tr><td colspan="10">No candidates.</td></tr>`;
 }
 
 load();

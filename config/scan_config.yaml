@@ -11,7 +11,7 @@ strikes:
 expiries:
   near:
     code: "26JUN"        # symbol fragment used to build the Fyers symbol
-    date: "2026-06-30"   # actual calendar expiry date (needed for time-to-expiry in Greeks) -- CONFIRM this is correct
+    date: "2026-06-25"   # actual calendar expiry date (needed for time-to-expiry in Greeks) -- CONFIRM this is correct
   far:
     code: "26707"        # symbol fragment used to build the Fyers symbol
     date: "2026-07-07"   # actual calendar expiry date -- CONFIRM this is correct
@@ -30,12 +30,18 @@ resolution: "5"          # 5-minute candles
 risk_free_rate: 0.065    # annualized, used in Black-Scholes
 square_off_time: "15:15" # IST, intraday exit
 
-# Entry filter (delta-neutral, positive-theta system)
-delta_neutral_band: 0.05   # |net delta per share-equivalent unit| must be below this
+# Strike selection: at every 5-min candle we re-locate ATM (closest strike
+# to spot) and/or ITM1 (one strike in-the-money) and build the calendar
+# combo AT THAT STRIKE ONLY -- not a scan across the whole strike range.
+strike_modes: ["ATM", "ITM1"]   # which strike rule(s) to evaluate each candle
+option_types: ["CE"]            # CE only per current strategy (buy far CE / sell near CE)
+
+# Ratio search: instead of solving for zero net premium, we now search
+# every (far_lots, near_lots) pair up to max_ratio_leg and pick the one
+# that MAXIMIZES net theta subject to BOTH risk caps below.
+max_ratio_leg: 6
+delta_neutral_band: 0.30   # |net delta|, in lots-equivalent units (far_lots*far_delta - near_lots*near_delta)
+gamma_band: 0.05           # |net gamma|, same lots-equivalent convention -- caps the "risk accelerates fast" exposure
 require_positive_theta: true
 
-# Ratio search
-max_ratio_leg: 10          # search ratios up to N:M with N,M <= this
-ratio_tolerance: 0.05       # acceptable net-premium imbalance as a fraction of gross premium
-
-lot_size: 65
+lot_size: 75
