@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------
+# Basket definition
+# ---------------------------------------------------------------------------
+# date_range: the historical window to compute P&L over (used for the
+#             "range_from"/"range_to" params of the Fyers history API).
+# resolution: candle size in minutes (e.g. "1", "5", "15", "60", "D").
+#
+# Each leg:
+#   fyers_symbol : exact Fyers symbol, e.g. "NSE:NIFTY25D2623500CE"
+#                  (use the Fyers symbol master / scrip lookup to get this
+#                  exactly right for each strike+expiry+CE/PE combination)
+#   side          : BUY or SELL
+#   lots          : number of lots
+#   lot_size      : contract lot size (Nifty = 75 as of 2026, but you can
+#                   override per leg if it ever changes)
+#   entry_price   : optional. If omitted, the script uses the close price
+#                   of the first available candle in the date range as the
+#                   entry price (useful for "what if I had entered at open").
+# ---------------------------------------------------------------------------
+
+date_range:
+  from: "2026-06-25"
+  to: "2026-06-26"
+
+resolution: "5"   # 5-minute candles
+
+legs:
+  - name: "Leg1 - Sell 23500 CE"
+    fyers_symbol: "NSE:NIFTY25D2623500CE"
+    side: SELL
+    lots: 1
+    lot_size: 75
+    entry_price: null
+
+  - name: "Leg2 - Buy 23700 CE"
+    fyers_symbol: "NSE:NIFTY25D2623700CE"
+    side: BUY
+    lots: 1
+    lot_size: 75
+    entry_price: null
+
+  - name: "Leg3 - Sell 23300 PE (different expiry example)"
+    fyers_symbol: "NSE:NIFTY25DEC2323300PE"
+    side: SELL
+    lots: 1
+    lot_size: 75
+    entry_price: null
