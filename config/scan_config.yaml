@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------------------
+# Combo scanner configuration
+# ---------------------------------------------------------------------------
+underlying_symbol: "NSE:NIFTY50-INDEX"
+
+strikes:
+  start: 23500
+  end: 24500
+  step: 100
+
+expiries:
+  near:
+    code: "26JUN"        # symbol fragment used to build the Fyers symbol
+    date: "2026-06-25"   # actual calendar expiry date (needed for time-to-expiry in Greeks) -- CONFIRM this is correct
+  far:
+    code: "26707"        # symbol fragment used to build the Fyers symbol
+    date: "2026-07-07"   # actual calendar expiry date -- CONFIRM this is correct
+
+# Fyers option symbol = NSE:NIFTY{expiry_code}{strike}{CE|PE}
+# e.g. NSE:NIFTY26JUN23500CE   /   NSE:NIFTY2670723500PE
+
+dates:
+  - "2026-06-22"
+  - "2026-06-23"
+  - "2026-06-24"
+  - "2026-06-25"
+  - "2026-06-30"
+
+resolution: "5"          # 5-minute candles
+risk_free_rate: 0.065    # annualized, used in Black-Scholes
+square_off_time: "15:15" # IST, intraday exit
+
+# Entry filter (delta-neutral, positive-theta system)
+delta_neutral_band: 0.05   # |net delta per share-equivalent unit| must be below this
+require_positive_theta: true
+
+# Ratio search
+max_ratio_leg: 10          # search ratios up to N:M with N,M <= this
+ratio_tolerance: 0.05       # acceptable net-premium imbalance as a fraction of gross premium
+
+lot_size: 75
