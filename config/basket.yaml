@@ -39,7 +39,7 @@ legs:
     lot_size: 65
     entry_price: null
 
-   - name: "Leg1 - Sell 24500 CE"
+  - name: "Leg1 - Sell 24500 CE"
     fyers_symbol: "NSE:NIFTY2671424500CE"
     side: SELL
     lots: 1
