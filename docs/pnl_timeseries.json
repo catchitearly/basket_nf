@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T09:17:34.922738Z",
+  "generated_at": "2026-07-15T09:21:07.032372Z",
   "date_range": {
     "from": "2026-07-15",
     "to": "2026-07-15"
@@ -7,708 +7,718 @@
   "resolution": "5",
   "legs": [
     {
-      "name": "Leg1 - Sell 23900 PE",
-      "symbol": "NSE:NIFTY2672123900PE",
+      "name": "Leg1 - Sell 23700 PE",
+      "symbol": "NSE:NIFTY2672123700PE",
       "side": "SELL",
       "lots": 1,
       "lot_size": 65,
-      "entry_price": 72.8
+      "entry_price": 35.35
     },
     {
-      "name": "Leg1 - Sell 23750 PE",
-      "symbol": "NSE:NIFTY2672123750PE",
+      "name": "Leg1 - Sell 23550 PE",
+      "symbol": "NSE:NIFTY2672123550PE",
       "side": "BUY",
       "lots": 1,
       "lot_size": 65,
-      "entry_price": 42.4
+      "entry_price": 20.8
     },
     {
-      "name": "Leg1 - Sell 24500 CE",
-      "symbol": "NSE:NIFTY2672124500CE",
+      "name": "Leg1 - Sell 24700 CE",
+      "symbol": "NSE:NIFTY2672124700CE",
       "side": "SELL",
       "lots": 1,
       "lot_size": 65,
-      "entry_price": 37.3
+      "entry_price": 13.85
     },
     {
-      "name": "Leg1 - Sell 24650 PE",
-      "symbol": "NSE:NIFTY2672124650CE",
+      "name": "Leg1 - Sell 24850 PE",
+      "symbol": "NSE:NIFTY2672124850CE",
       "side": "BUY",
       "lots": 1,
       "lot_size": 65,
-      "entry_price": 17.85
+      "entry_price": 7.2
     }
   ],
   "timeseries": [
     {
       "ts": 1784087100,
       "legs": {
-        "Leg1 - Sell 23900 PE": -0.0,
-        "Leg1 - Sell 23750 PE": 0.0,
-        "Leg1 - Sell 24500 CE": -0.0,
-        "Leg1 - Sell 24650 PE": 0.0
+        "Leg1 - Sell 23700 PE": -0.0,
+        "Leg1 - Sell 23550 PE": 0.0,
+        "Leg1 - Sell 24700 CE": -0.0,
+        "Leg1 - Sell 24850 PE": 0.0
       },
       "total": 0.0
     },
     {
       "ts": 1784087400,
       "legs": {
-        "Leg1 - Sell 23900 PE": 377.0,
-        "Leg1 - Sell 23750 PE": -201.5,
-        "Leg1 - Sell 24500 CE": -516.75,
-        "Leg1 - Sell 24650 PE": 256.75
+        "Leg1 - Sell 23700 PE": 152.75,
+        "Leg1 - Sell 23550 PE": -81.25,
+        "Leg1 - Sell 24700 CE": -182.0,
+        "Leg1 - Sell 24850 PE": 81.25
       },
-      "total": -84.5
+      "total": -29.25
     },
     {
       "ts": 1784087700,
       "legs": {
-        "Leg1 - Sell 23900 PE": 481.0,
-        "Leg1 - Sell 23750 PE": -263.25,
-        "Leg1 - Sell 24500 CE": -555.75,
-        "Leg1 - Sell 24650 PE": 263.25
+        "Leg1 - Sell 23700 PE": 198.25,
+        "Leg1 - Sell 23550 PE": -110.5,
+        "Leg1 - Sell 24700 CE": -204.75,
+        "Leg1 - Sell 24850 PE": 78.0
       },
-      "total": -74.75
+      "total": -39.0
     },
     {
       "ts": 1784088000,
       "legs": {
-        "Leg1 - Sell 23900 PE": 611.0,
-        "Leg1 - Sell 23750 PE": -321.75,
-        "Leg1 - Sell 24500 CE": -640.25,
-        "Leg1 - Sell 24650 PE": 286.0
+        "Leg1 - Sell 23700 PE": 240.5,
+        "Leg1 - Sell 23550 PE": -130.0,
+        "Leg1 - Sell 24700 CE": -208.0,
+        "Leg1 - Sell 24850 PE": 81.25
       },
-      "total": -65.0
+      "total": -16.25
     },
     {
       "ts": 1784088300,
       "legs": {
-        "Leg1 - Sell 23900 PE": 562.25,
-        "Leg1 - Sell 23750 PE": -260.0,
-        "Leg1 - Sell 24500 CE": -497.25,
-        "Leg1 - Sell 24650 PE": 198.25
+        "Leg1 - Sell 23700 PE": 195.0,
+        "Leg1 - Sell 23550 PE": -107.25,
+        "Leg1 - Sell 24700 CE": -143.0,
+        "Leg1 - Sell 24850 PE": 45.5
       },
-      "total": 3.25
+      "total": -9.75
     },
     {
       "ts": 1784088600,
       "legs": {
-        "Leg1 - Sell 23900 PE": 620.75,
-        "Leg1 - Sell 23750 PE": -321.75,
-        "Leg1 - Sell 24500 CE": -403.0,
-        "Leg1 - Sell 24650 PE": 149.5
-      },
-      "total": 45.5
-    },
-    {
-      "ts": 1784088900,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 617.5,
-        "Leg1 - Sell 23750 PE": -331.5,
-        "Leg1 - Sell 24500 CE": -354.25,
-        "Leg1 - Sell 24650 PE": 107.25
-      },
-      "total": 39.0
-    },
-    {
-      "ts": 1784089200,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 767.0,
-        "Leg1 - Sell 23750 PE": -412.75,
-        "Leg1 - Sell 24500 CE": -484.25,
-        "Leg1 - Sell 24650 PE": 165.75
+        "Leg1 - Sell 23700 PE": 250.25,
+        "Leg1 - Sell 23550 PE": -143.0,
+        "Leg1 - Sell 24700 CE": -94.25,
+        "Leg1 - Sell 24850 PE": 22.75
       },
       "total": 35.75
     },
     {
+      "ts": 1784088900,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 256.75,
+        "Leg1 - Sell 23550 PE": -149.5,
+        "Leg1 - Sell 24700 CE": -68.25,
+        "Leg1 - Sell 24850 PE": 6.5
+      },
+      "total": 45.5
+    },
+    {
+      "ts": 1784089200,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 321.75,
+        "Leg1 - Sell 23550 PE": -172.25,
+        "Leg1 - Sell 24700 CE": -107.25,
+        "Leg1 - Sell 24850 PE": 26.0
+      },
+      "total": 68.25
+    },
+    {
       "ts": 1784089500,
       "legs": {
-        "Leg1 - Sell 23900 PE": 611.0,
-        "Leg1 - Sell 23750 PE": -331.5,
-        "Leg1 - Sell 24500 CE": -156.0,
-        "Leg1 - Sell 24650 PE": 9.75
+        "Leg1 - Sell 23700 PE": 253.5,
+        "Leg1 - Sell 23550 PE": -146.25,
+        "Leg1 - Sell 24700 CE": 16.25,
+        "Leg1 - Sell 24850 PE": -32.5
       },
-      "total": 133.25
+      "total": 91.0
     },
     {
       "ts": 1784089800,
       "legs": {
-        "Leg1 - Sell 23900 PE": 682.5,
-        "Leg1 - Sell 23750 PE": -386.75,
-        "Leg1 - Sell 24500 CE": -172.25,
-        "Leg1 - Sell 24650 PE": 6.5
+        "Leg1 - Sell 23700 PE": 318.5,
+        "Leg1 - Sell 23550 PE": -195.0,
+        "Leg1 - Sell 24700 CE": 9.75,
+        "Leg1 - Sell 24850 PE": -39.0
       },
-      "total": 130.0
+      "total": 94.25
     },
     {
       "ts": 1784090100,
       "legs": {
-        "Leg1 - Sell 23900 PE": 812.5,
-        "Leg1 - Sell 23750 PE": -471.25,
-        "Leg1 - Sell 24500 CE": -289.25,
-        "Leg1 - Sell 24650 PE": 61.75
+        "Leg1 - Sell 23700 PE": 380.25,
+        "Leg1 - Sell 23550 PE": -240.5,
+        "Leg1 - Sell 24700 CE": -32.5,
+        "Leg1 - Sell 24850 PE": -19.5
       },
-      "total": 113.75
+      "total": 87.75
     },
     {
       "ts": 1784090400,
       "legs": {
-        "Leg1 - Sell 23900 PE": 936.0,
-        "Leg1 - Sell 23750 PE": -542.75,
-        "Leg1 - Sell 24500 CE": -416.0,
-        "Leg1 - Sell 24650 PE": 130.0
+        "Leg1 - Sell 23700 PE": 432.25,
+        "Leg1 - Sell 23550 PE": -269.75,
+        "Leg1 - Sell 24700 CE": -74.75,
+        "Leg1 - Sell 24850 PE": 0.0
       },
-      "total": 107.25
+      "total": 87.75
     },
     {
       "ts": 1784090700,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1085.5,
-        "Leg1 - Sell 23750 PE": -627.25,
-        "Leg1 - Sell 24500 CE": -490.75,
-        "Leg1 - Sell 24650 PE": 159.25
+        "Leg1 - Sell 23700 PE": 510.25,
+        "Leg1 - Sell 23550 PE": -305.5,
+        "Leg1 - Sell 24700 CE": -97.5,
+        "Leg1 - Sell 24850 PE": 13.0
       },
-      "total": 126.75
+      "total": 120.25
     },
     {
       "ts": 1784091000,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1085.5,
-        "Leg1 - Sell 23750 PE": -617.5,
-        "Leg1 - Sell 24500 CE": -455.0,
-        "Leg1 - Sell 24650 PE": 133.25
+        "Leg1 - Sell 23700 PE": 500.5,
+        "Leg1 - Sell 23550 PE": -292.5,
+        "Leg1 - Sell 24700 CE": -74.75,
+        "Leg1 - Sell 24850 PE": -3.25
       },
-      "total": 146.25
+      "total": 130.0
     },
     {
       "ts": 1784091300,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1049.75,
-        "Leg1 - Sell 23750 PE": -617.5,
-        "Leg1 - Sell 24500 CE": -360.75,
-        "Leg1 - Sell 24650 PE": 81.25
+        "Leg1 - Sell 23700 PE": 503.75,
+        "Leg1 - Sell 23550 PE": -302.25,
+        "Leg1 - Sell 24700 CE": -32.5,
+        "Leg1 - Sell 24850 PE": -16.25
       },
       "total": 152.75
     },
     {
       "ts": 1784091600,
       "legs": {
-        "Leg1 - Sell 23900 PE": 975.0,
-        "Leg1 - Sell 23750 PE": -572.0,
-        "Leg1 - Sell 24500 CE": -289.25,
-        "Leg1 - Sell 24650 PE": 55.25
+        "Leg1 - Sell 23700 PE": 468.0,
+        "Leg1 - Sell 23550 PE": -289.25,
+        "Leg1 - Sell 24700 CE": -16.25,
+        "Leg1 - Sell 24850 PE": -26.0
       },
-      "total": 169.0
+      "total": 136.5
     },
     {
       "ts": 1784091900,
       "legs": {
-        "Leg1 - Sell 23900 PE": 952.25,
-        "Leg1 - Sell 23750 PE": -562.25,
-        "Leg1 - Sell 24500 CE": -247.0,
-        "Leg1 - Sell 24650 PE": 32.5
+        "Leg1 - Sell 23700 PE": 468.0,
+        "Leg1 - Sell 23550 PE": -299.0,
+        "Leg1 - Sell 24700 CE": 3.25,
+        "Leg1 - Sell 24850 PE": -32.5
       },
-      "total": 175.5
+      "total": 139.75
     },
     {
       "ts": 1784092200,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1059.5,
-        "Leg1 - Sell 23750 PE": -640.25,
-        "Leg1 - Sell 24500 CE": -354.25,
-        "Leg1 - Sell 24650 PE": 84.5
+        "Leg1 - Sell 23700 PE": 520.0,
+        "Leg1 - Sell 23550 PE": -325.0,
+        "Leg1 - Sell 24700 CE": -42.25,
+        "Leg1 - Sell 24850 PE": -13.0
       },
-      "total": 149.5
+      "total": 139.75
     },
     {
       "ts": 1784092500,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1027.0,
-        "Leg1 - Sell 23750 PE": -620.75,
-        "Leg1 - Sell 24500 CE": -308.75,
-        "Leg1 - Sell 24650 PE": 68.25
+        "Leg1 - Sell 23700 PE": 513.5,
+        "Leg1 - Sell 23550 PE": -321.75,
+        "Leg1 - Sell 24700 CE": -26.0,
+        "Leg1 - Sell 24850 PE": -22.75
       },
-      "total": 165.75
+      "total": 143.0
     },
     {
       "ts": 1784092800,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1001.0,
-        "Leg1 - Sell 23750 PE": -611.0,
-        "Leg1 - Sell 24500 CE": -289.25,
-        "Leg1 - Sell 24650 PE": 65.0
+        "Leg1 - Sell 23700 PE": 510.25,
+        "Leg1 - Sell 23550 PE": -325.0,
+        "Leg1 - Sell 24700 CE": -26.0,
+        "Leg1 - Sell 24850 PE": -19.5
       },
-      "total": 165.75
+      "total": 139.75
     },
     {
       "ts": 1784093100,
       "legs": {
-        "Leg1 - Sell 23900 PE": 783.25,
-        "Leg1 - Sell 23750 PE": -494.0,
-        "Leg1 - Sell 24500 CE": -71.5,
-        "Leg1 - Sell 24650 PE": -35.75
+        "Leg1 - Sell 23700 PE": 406.25,
+        "Leg1 - Sell 23550 PE": -269.75,
+        "Leg1 - Sell 24700 CE": 48.75,
+        "Leg1 - Sell 24850 PE": -42.25
       },
-      "total": 182.0
+      "total": 143.0
     },
     {
       "ts": 1784093400,
       "legs": {
-        "Leg1 - Sell 23900 PE": 893.75,
-        "Leg1 - Sell 23750 PE": -542.75,
-        "Leg1 - Sell 24500 CE": -162.5,
-        "Leg1 - Sell 24650 PE": 9.75
+        "Leg1 - Sell 23700 PE": 461.5,
+        "Leg1 - Sell 23550 PE": -299.0,
+        "Leg1 - Sell 24700 CE": 13.0,
+        "Leg1 - Sell 24850 PE": -32.5
       },
-      "total": 198.25
+      "total": 143.0
     },
     {
       "ts": 1784093700,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1014.0,
-        "Leg1 - Sell 23750 PE": -620.75,
-        "Leg1 - Sell 24500 CE": -250.25,
-        "Leg1 - Sell 24650 PE": 45.5
+        "Leg1 - Sell 23700 PE": 523.25,
+        "Leg1 - Sell 23550 PE": -328.25,
+        "Leg1 - Sell 24700 CE": -16.25,
+        "Leg1 - Sell 24850 PE": -22.75
       },
-      "total": 188.5
+      "total": 156.0
     },
     {
       "ts": 1784094000,
       "legs": {
-        "Leg1 - Sell 23900 PE": 724.75,
-        "Leg1 - Sell 23750 PE": -458.25,
-        "Leg1 - Sell 24500 CE": 58.5,
-        "Leg1 - Sell 24650 PE": -81.25
+        "Leg1 - Sell 23700 PE": 393.25,
+        "Leg1 - Sell 23550 PE": -266.5,
+        "Leg1 - Sell 24700 CE": 81.25,
+        "Leg1 - Sell 24850 PE": -61.75
       },
-      "total": 243.75
+      "total": 146.25
     },
     {
       "ts": 1784094300,
       "legs": {
-        "Leg1 - Sell 23900 PE": 893.75,
-        "Leg1 - Sell 23750 PE": -559.0,
-        "Leg1 - Sell 24500 CE": -61.75,
-        "Leg1 - Sell 24650 PE": -29.25
-      },
-      "total": 243.75
-    },
-    {
-      "ts": 1784094600,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 838.5,
-        "Leg1 - Sell 23750 PE": -539.5,
-        "Leg1 - Sell 24500 CE": -13.0,
-        "Leg1 - Sell 24650 PE": -61.75
-      },
-      "total": 224.25
-    },
-    {
-      "ts": 1784094900,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 1108.25,
-        "Leg1 - Sell 23750 PE": -685.75,
-        "Leg1 - Sell 24500 CE": -256.75,
-        "Leg1 - Sell 24650 PE": 48.75
-      },
-      "total": 214.5
-    },
-    {
-      "ts": 1784095200,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 1170.0,
-        "Leg1 - Sell 23750 PE": -708.5,
-        "Leg1 - Sell 24500 CE": -390.0,
-        "Leg1 - Sell 24650 PE": 100.75
+        "Leg1 - Sell 23700 PE": 474.5,
+        "Leg1 - Sell 23550 PE": -308.75,
+        "Leg1 - Sell 24700 CE": 45.5,
+        "Leg1 - Sell 24850 PE": -39.0
       },
       "total": 172.25
     },
     {
+      "ts": 1784094600,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 461.5,
+        "Leg1 - Sell 23550 PE": -308.75,
+        "Leg1 - Sell 24700 CE": 55.25,
+        "Leg1 - Sell 24850 PE": -48.75
+      },
+      "total": 159.25
+    },
+    {
+      "ts": 1784094900,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 572.0,
+        "Leg1 - Sell 23550 PE": -354.25,
+        "Leg1 - Sell 24700 CE": -22.75,
+        "Leg1 - Sell 24850 PE": -16.25
+      },
+      "total": 178.75
+    },
+    {
+      "ts": 1784095200,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 585.0,
+        "Leg1 - Sell 23550 PE": -354.25,
+        "Leg1 - Sell 24700 CE": -61.75,
+        "Leg1 - Sell 24850 PE": 0.0
+      },
+      "total": 169.0
+    },
+    {
       "ts": 1784095500,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1017.25,
-        "Leg1 - Sell 23750 PE": -617.5,
-        "Leg1 - Sell 24500 CE": -113.75,
-        "Leg1 - Sell 24650 PE": -26.0
-      },
-      "total": 260.0
-    },
-    {
-      "ts": 1784095800,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 698.75,
-        "Leg1 - Sell 23750 PE": -445.25,
-        "Leg1 - Sell 24500 CE": 113.75,
-        "Leg1 - Sell 24650 PE": -117.0
-      },
-      "total": 250.25
-    },
-    {
-      "ts": 1784096100,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 757.25,
-        "Leg1 - Sell 23750 PE": -484.25,
-        "Leg1 - Sell 24500 CE": 45.5,
-        "Leg1 - Sell 24650 PE": -81.25
-      },
-      "total": 237.25
-    },
-    {
-      "ts": 1784096400,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 835.25,
-        "Leg1 - Sell 23750 PE": -536.25,
-        "Leg1 - Sell 24500 CE": 45.5,
-        "Leg1 - Sell 24650 PE": -84.5
-      },
-      "total": 260.0
-    },
-    {
-      "ts": 1784096700,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 874.25,
-        "Leg1 - Sell 23750 PE": -555.75,
-        "Leg1 - Sell 24500 CE": 32.5,
-        "Leg1 - Sell 24650 PE": -81.25
-      },
-      "total": 269.75
-    },
-    {
-      "ts": 1784097000,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 877.5,
-        "Leg1 - Sell 23750 PE": -546.0,
-        "Leg1 - Sell 24500 CE": 45.5,
-        "Leg1 - Sell 24650 PE": -91.0
-      },
-      "total": 286.0
-    },
-    {
-      "ts": 1784097300,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 832.0,
-        "Leg1 - Sell 23750 PE": -533.0,
-        "Leg1 - Sell 24500 CE": 87.75,
-        "Leg1 - Sell 24650 PE": -110.5
-      },
-      "total": 276.25
-    },
-    {
-      "ts": 1784097600,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 1007.5,
-        "Leg1 - Sell 23750 PE": -633.75,
-        "Leg1 - Sell 24500 CE": -13.0,
-        "Leg1 - Sell 24650 PE": -78.0
-      },
-      "total": 282.75
-    },
-    {
-      "ts": 1784097900,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 1007.5,
-        "Leg1 - Sell 23750 PE": -627.25,
-        "Leg1 - Sell 24500 CE": -0.0,
-        "Leg1 - Sell 24650 PE": -81.25
-      },
-      "total": 299.0
-    },
-    {
-      "ts": 1784098200,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 926.25,
-        "Leg1 - Sell 23750 PE": -585.0,
-        "Leg1 - Sell 24500 CE": 84.5,
-        "Leg1 - Sell 24650 PE": -130.0
-      },
-      "total": 295.75
-    },
-    {
-      "ts": 1784098500,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 702.0,
-        "Leg1 - Sell 23750 PE": -455.0,
-        "Leg1 - Sell 24500 CE": 260.0,
-        "Leg1 - Sell 24650 PE": -198.25
-      },
-      "total": 308.75
-    },
-    {
-      "ts": 1784098800,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 630.5,
-        "Leg1 - Sell 23750 PE": -435.5,
-        "Leg1 - Sell 24500 CE": 276.25,
-        "Leg1 - Sell 24650 PE": -204.75
-      },
-      "total": 266.5
-    },
-    {
-      "ts": 1784099100,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 286.0,
-        "Leg1 - Sell 23750 PE": -208.0,
-        "Leg1 - Sell 24500 CE": 481.0,
-        "Leg1 - Sell 24650 PE": -292.5
-      },
-      "total": 266.5
-    },
-    {
-      "ts": 1784099400,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 555.75,
-        "Leg1 - Sell 23750 PE": -393.25,
-        "Leg1 - Sell 24500 CE": 364.0,
-        "Leg1 - Sell 24650 PE": -243.75
-      },
-      "total": 282.75
-    },
-    {
-      "ts": 1784099700,
-      "legs": {
-        "Leg1 - Sell 23900 PE": 377.0,
-        "Leg1 - Sell 23750 PE": -282.75,
-        "Leg1 - Sell 24500 CE": 445.25,
-        "Leg1 - Sell 24650 PE": -276.25
-      },
-      "total": 263.25
-    },
-    {
-      "ts": 1784100000,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -65.0,
-        "Leg1 - Sell 23750 PE": -32.5,
-        "Leg1 - Sell 24500 CE": 633.75,
-        "Leg1 - Sell 24650 PE": -347.75
+        "Leg1 - Sell 23700 PE": 520.0,
+        "Leg1 - Sell 23550 PE": -325.0,
+        "Leg1 - Sell 24700 CE": 39.0,
+        "Leg1 - Sell 24850 PE": -45.5
       },
       "total": 188.5
     },
     {
+      "ts": 1784095800,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 377.0,
+        "Leg1 - Sell 23550 PE": -253.5,
+        "Leg1 - Sell 24700 CE": 104.0,
+        "Leg1 - Sell 24850 PE": -61.75
+      },
+      "total": 165.75
+    },
+    {
+      "ts": 1784096100,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 412.75,
+        "Leg1 - Sell 23550 PE": -279.5,
+        "Leg1 - Sell 24700 CE": 78.0,
+        "Leg1 - Sell 24850 PE": -48.75
+      },
+      "total": 162.5
+    },
+    {
+      "ts": 1784096400,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 458.25,
+        "Leg1 - Sell 23550 PE": -312.0,
+        "Leg1 - Sell 24700 CE": 71.5,
+        "Leg1 - Sell 24850 PE": -48.75
+      },
+      "total": 169.0
+    },
+    {
+      "ts": 1784096700,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 468.0,
+        "Leg1 - Sell 23550 PE": -312.0,
+        "Leg1 - Sell 24700 CE": 68.25,
+        "Leg1 - Sell 24850 PE": -48.75
+      },
+      "total": 175.5
+    },
+    {
+      "ts": 1784097000,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 464.75,
+        "Leg1 - Sell 23550 PE": -315.25,
+        "Leg1 - Sell 24700 CE": 84.5,
+        "Leg1 - Sell 24850 PE": -52.0
+      },
+      "total": 182.0
+    },
+    {
+      "ts": 1784097300,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 461.5,
+        "Leg1 - Sell 23550 PE": -312.0,
+        "Leg1 - Sell 24700 CE": 100.75,
+        "Leg1 - Sell 24850 PE": -58.5
+      },
+      "total": 191.75
+    },
+    {
+      "ts": 1784097600,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 536.25,
+        "Leg1 - Sell 23550 PE": -351.0,
+        "Leg1 - Sell 24700 CE": 78.0,
+        "Leg1 - Sell 24850 PE": -48.75
+      },
+      "total": 214.5
+    },
+    {
+      "ts": 1784097900,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 533.0,
+        "Leg1 - Sell 23550 PE": -344.5,
+        "Leg1 - Sell 24700 CE": 84.5,
+        "Leg1 - Sell 24850 PE": -61.75
+      },
+      "total": 211.25
+    },
+    {
+      "ts": 1784098200,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 497.25,
+        "Leg1 - Sell 23550 PE": -325.0,
+        "Leg1 - Sell 24700 CE": 113.75,
+        "Leg1 - Sell 24850 PE": -65.0
+      },
+      "total": 221.0
+    },
+    {
+      "ts": 1784098500,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 393.25,
+        "Leg1 - Sell 23550 PE": -282.75,
+        "Leg1 - Sell 24700 CE": 172.25,
+        "Leg1 - Sell 24850 PE": -87.75
+      },
+      "total": 195.0
+    },
+    {
+      "ts": 1784098800,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 367.25,
+        "Leg1 - Sell 23550 PE": -263.25,
+        "Leg1 - Sell 24700 CE": 172.25,
+        "Leg1 - Sell 24850 PE": -87.75
+      },
+      "total": 188.5
+    },
+    {
+      "ts": 1784099100,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 204.75,
+        "Leg1 - Sell 23550 PE": -172.25,
+        "Leg1 - Sell 24700 CE": 240.5,
+        "Leg1 - Sell 24850 PE": -110.5
+      },
+      "total": 162.5
+    },
+    {
+      "ts": 1784099400,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 351.0,
+        "Leg1 - Sell 23550 PE": -260.0,
+        "Leg1 - Sell 24700 CE": 201.5,
+        "Leg1 - Sell 24850 PE": -97.5
+      },
+      "total": 195.0
+    },
+    {
+      "ts": 1784099700,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 256.75,
+        "Leg1 - Sell 23550 PE": -217.75,
+        "Leg1 - Sell 24700 CE": 224.25,
+        "Leg1 - Sell 24850 PE": -100.75
+      },
+      "total": 162.5
+    },
+    {
+      "ts": 1784100000,
+      "legs": {
+        "Leg1 - Sell 23700 PE": 45.5,
+        "Leg1 - Sell 23550 PE": -104.0,
+        "Leg1 - Sell 24700 CE": 273.0,
+        "Leg1 - Sell 24850 PE": -113.75
+      },
+      "total": 100.75
+    },
+    {
       "ts": 1784100300,
       "legs": {
-        "Leg1 - Sell 23900 PE": -2717.0,
-        "Leg1 - Sell 23750 PE": 1742.0,
-        "Leg1 - Sell 24500 CE": 802.75,
-        "Leg1 - Sell 24650 PE": -351.0
-      },
-      "total": -523.25
-    },
-    {
-      "ts": 1784100600,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -2080.0,
-        "Leg1 - Sell 23750 PE": 1287.0,
-        "Leg1 - Sell 24500 CE": 708.5,
-        "Leg1 - Sell 24650 PE": -321.75
-      },
-      "total": -406.25
-    },
-    {
-      "ts": 1784100900,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -2814.5,
-        "Leg1 - Sell 23750 PE": 1787.5,
-        "Leg1 - Sell 24500 CE": 835.25,
-        "Leg1 - Sell 24650 PE": -367.25
-      },
-      "total": -559.0
-    },
-    {
-      "ts": 1784101200,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -2570.75,
-        "Leg1 - Sell 23750 PE": 1621.75,
-        "Leg1 - Sell 24500 CE": 809.25,
-        "Leg1 - Sell 24650 PE": -351.0
-      },
-      "total": -490.75
-    },
-    {
-      "ts": 1784101500,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -1482.0,
-        "Leg1 - Sell 23750 PE": 887.25,
-        "Leg1 - Sell 24500 CE": 689.0,
-        "Leg1 - Sell 24650 PE": -325.0
-      },
-      "total": -230.75
-    },
-    {
-      "ts": 1784101800,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -1803.75,
-        "Leg1 - Sell 23750 PE": 1085.5,
-        "Leg1 - Sell 24500 CE": 747.5,
-        "Leg1 - Sell 24650 PE": -334.75
-      },
-      "total": -305.5
-    },
-    {
-      "ts": 1784102100,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -1732.25,
-        "Leg1 - Sell 23750 PE": 1033.5,
-        "Leg1 - Sell 24500 CE": 744.25,
-        "Leg1 - Sell 24650 PE": -341.25
-      },
-      "total": -295.75
-    },
-    {
-      "ts": 1784102400,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -2067.0,
-        "Leg1 - Sell 23750 PE": 1248.0,
-        "Leg1 - Sell 24500 CE": 786.5,
-        "Leg1 - Sell 24650 PE": -354.25
-      },
-      "total": -386.75
-    },
-    {
-      "ts": 1784102700,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -2102.75,
-        "Leg1 - Sell 23750 PE": 1283.75,
-        "Leg1 - Sell 24500 CE": 786.5,
-        "Leg1 - Sell 24650 PE": -364.0
-      },
-      "total": -396.5
-    },
-    {
-      "ts": 1784103000,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -2369.25,
-        "Leg1 - Sell 23750 PE": 1478.75,
-        "Leg1 - Sell 24500 CE": 822.25,
-        "Leg1 - Sell 24650 PE": -373.75
-      },
-      "total": -442.0
-    },
-    {
-      "ts": 1784103300,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -1924.0,
-        "Leg1 - Sell 23750 PE": 1202.5,
-        "Leg1 - Sell 24500 CE": 809.25,
-        "Leg1 - Sell 24650 PE": -373.75
-      },
-      "total": -286.0
-    },
-    {
-      "ts": 1784103600,
-      "legs": {
-        "Leg1 - Sell 23900 PE": -2499.25,
-        "Leg1 - Sell 23750 PE": 1569.75,
-        "Leg1 - Sell 24500 CE": 858.0,
-        "Leg1 - Sell 24650 PE": -390.0
+        "Leg1 - Sell 23700 PE": -1439.75,
+        "Leg1 - Sell 23550 PE": 806.0,
+        "Leg1 - Sell 24700 CE": 260.0,
+        "Leg1 - Sell 24850 PE": -87.75
       },
       "total": -461.5
     },
     {
+      "ts": 1784100600,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -1046.5,
+        "Leg1 - Sell 23550 PE": 536.25,
+        "Leg1 - Sell 24700 CE": 230.75,
+        "Leg1 - Sell 24850 PE": -78.0
+      },
+      "total": -357.5
+    },
+    {
+      "ts": 1784100900,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -1501.5,
+        "Leg1 - Sell 23550 PE": 819.0,
+        "Leg1 - Sell 24700 CE": 269.75,
+        "Leg1 - Sell 24850 PE": -87.75
+      },
+      "total": -500.5
+    },
+    {
+      "ts": 1784101200,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -1335.75,
+        "Leg1 - Sell 23550 PE": 708.5,
+        "Leg1 - Sell 24700 CE": 256.75,
+        "Leg1 - Sell 24850 PE": -78.0
+      },
+      "total": -448.5
+    },
+    {
+      "ts": 1784101500,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -708.5,
+        "Leg1 - Sell 23550 PE": 338.0,
+        "Leg1 - Sell 24700 CE": 237.25,
+        "Leg1 - Sell 24850 PE": -81.25
+      },
+      "total": -214.5
+    },
+    {
+      "ts": 1784101800,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -887.25,
+        "Leg1 - Sell 23550 PE": 445.25,
+        "Leg1 - Sell 24700 CE": 243.75,
+        "Leg1 - Sell 24850 PE": -87.75
+      },
+      "total": -286.0
+    },
+    {
+      "ts": 1784102100,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -845.0,
+        "Leg1 - Sell 23550 PE": 412.75,
+        "Leg1 - Sell 24700 CE": 247.0,
+        "Leg1 - Sell 24850 PE": -87.75
+      },
+      "total": -273.0
+    },
+    {
+      "ts": 1784102400,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -1030.25,
+        "Leg1 - Sell 23550 PE": 523.25,
+        "Leg1 - Sell 24700 CE": 256.75,
+        "Leg1 - Sell 24850 PE": -87.75
+      },
+      "total": -338.0
+    },
+    {
+      "ts": 1784102700,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -1056.25,
+        "Leg1 - Sell 23550 PE": 549.25,
+        "Leg1 - Sell 24700 CE": 260.0,
+        "Leg1 - Sell 24850 PE": -94.25
+      },
+      "total": -341.25
+    },
+    {
+      "ts": 1784103000,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -1218.75,
+        "Leg1 - Sell 23550 PE": 640.25,
+        "Leg1 - Sell 24700 CE": 269.75,
+        "Leg1 - Sell 24850 PE": -97.5
+      },
+      "total": -406.25
+    },
+    {
+      "ts": 1784103300,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -978.25,
+        "Leg1 - Sell 23550 PE": 487.5,
+        "Leg1 - Sell 24700 CE": 269.75,
+        "Leg1 - Sell 24850 PE": -97.5
+      },
+      "total": -318.5
+    },
+    {
+      "ts": 1784103600,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -1306.5,
+        "Leg1 - Sell 23550 PE": 692.25,
+        "Leg1 - Sell 24700 CE": 279.5,
+        "Leg1 - Sell 24850 PE": -104.0
+      },
+      "total": -438.75
+    },
+    {
       "ts": 1784103900,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1488.5,
-        "Leg1 - Sell 23750 PE": 893.75,
-        "Leg1 - Sell 24500 CE": 747.5,
-        "Leg1 - Sell 24650 PE": -347.75
+        "Leg1 - Sell 23700 PE": -721.5,
+        "Leg1 - Sell 23550 PE": 338.0,
+        "Leg1 - Sell 24700 CE": 247.0,
+        "Leg1 - Sell 24850 PE": -94.25
       },
-      "total": -195.0
+      "total": -230.75
     },
     {
       "ts": 1784104200,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1569.75,
-        "Leg1 - Sell 23750 PE": 945.75,
-        "Leg1 - Sell 24500 CE": 757.25,
-        "Leg1 - Sell 24650 PE": -360.75
+        "Leg1 - Sell 23700 PE": -786.5,
+        "Leg1 - Sell 23550 PE": 383.5,
+        "Leg1 - Sell 24700 CE": 256.75,
+        "Leg1 - Sell 24850 PE": -97.5
       },
-      "total": -227.5
+      "total": -243.75
     },
     {
       "ts": 1784104500,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1274.0,
-        "Leg1 - Sell 23750 PE": 734.5,
-        "Leg1 - Sell 24500 CE": 734.5,
-        "Leg1 - Sell 24650 PE": -351.0
+        "Leg1 - Sell 23700 PE": -578.5,
+        "Leg1 - Sell 23550 PE": 253.5,
+        "Leg1 - Sell 24700 CE": 260.0,
+        "Leg1 - Sell 24850 PE": -104.0
       },
-      "total": -156.0
+      "total": -169.0
     },
     {
       "ts": 1784104800,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1352.0,
-        "Leg1 - Sell 23750 PE": 773.5,
-        "Leg1 - Sell 24500 CE": 705.25,
-        "Leg1 - Sell 24650 PE": -338.0
+        "Leg1 - Sell 23700 PE": -627.25,
+        "Leg1 - Sell 23550 PE": 295.75,
+        "Leg1 - Sell 24700 CE": 247.0,
+        "Leg1 - Sell 24850 PE": -94.25
       },
-      "total": -211.25
+      "total": -178.75
     },
     {
       "ts": 1784105100,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1462.5,
-        "Leg1 - Sell 23750 PE": 880.75,
-        "Leg1 - Sell 24500 CE": 796.25,
-        "Leg1 - Sell 24650 PE": -380.25
+        "Leg1 - Sell 23700 PE": -705.25,
+        "Leg1 - Sell 23550 PE": 334.75,
+        "Leg1 - Sell 24700 CE": 286.0,
+        "Leg1 - Sell 24850 PE": -113.75
       },
-      "total": -165.75
+      "total": -198.25
     },
     {
       "ts": 1784105400,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1664.0,
-        "Leg1 - Sell 23750 PE": 988.0,
-        "Leg1 - Sell 24500 CE": 828.75,
-        "Leg1 - Sell 24650 PE": -386.75
+        "Leg1 - Sell 23700 PE": -809.25,
+        "Leg1 - Sell 23550 PE": 377.0,
+        "Leg1 - Sell 24700 CE": 292.5,
+        "Leg1 - Sell 24850 PE": -117.0
       },
-      "total": -234.0
+      "total": -256.75
     },
     {
       "ts": 1784105700,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1439.75,
-        "Leg1 - Sell 23750 PE": 835.25,
-        "Leg1 - Sell 24500 CE": 841.75,
-        "Leg1 - Sell 24650 PE": -396.5
+        "Leg1 - Sell 23700 PE": -656.5,
+        "Leg1 - Sell 23550 PE": 286.0,
+        "Leg1 - Sell 24700 CE": 302.25,
+        "Leg1 - Sell 24850 PE": -123.5
       },
-      "total": -159.25
+      "total": -191.75
     },
     {
       "ts": 1784106000,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1459.25,
-        "Leg1 - Sell 23750 PE": 809.25,
-        "Leg1 - Sell 24500 CE": 861.25,
-        "Leg1 - Sell 24650 PE": -416.0
+        "Leg1 - Sell 23700 PE": -643.5,
+        "Leg1 - Sell 23550 PE": 266.5,
+        "Leg1 - Sell 24700 CE": 315.25,
+        "Leg1 - Sell 24850 PE": -136.5
       },
-      "total": -204.75
+      "total": -198.25
     },
     {
       "ts": 1784106300,
       "legs": {
-        "Leg1 - Sell 23900 PE": -581.75,
-        "Leg1 - Sell 23750 PE": 243.75,
-        "Leg1 - Sell 24500 CE": 624.0,
-        "Leg1 - Sell 24650 PE": -308.75
+        "Leg1 - Sell 23700 PE": -172.25,
+        "Leg1 - Sell 23550 PE": -13.0,
+        "Leg1 - Sell 24700 CE": 234.0,
+        "Leg1 - Sell 24850 PE": -100.75
       },
-      "total": -22.75
+      "total": -52.0
     },
     {
       "ts": 1784106600,
       "legs": {
-        "Leg1 - Sell 23900 PE": -734.5,
-        "Leg1 - Sell 23750 PE": 341.25,
-        "Leg1 - Sell 24500 CE": 650.0,
-        "Leg1 - Sell 24650 PE": -331.5
+        "Leg1 - Sell 23700 PE": -243.75,
+        "Leg1 - Sell 23550 PE": 39.0,
+        "Leg1 - Sell 24700 CE": 263.25,
+        "Leg1 - Sell 24850 PE": -123.5
       },
-      "total": -74.75
+      "total": -65.0
     },
     {
       "ts": 1784106900,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1082.25,
-        "Leg1 - Sell 23750 PE": 572.0,
-        "Leg1 - Sell 24500 CE": 770.25,
-        "Leg1 - Sell 24650 PE": -390.0
+        "Leg1 - Sell 23700 PE": -637.0,
+        "Leg1 - Sell 23550 PE": 260.0,
+        "Leg1 - Sell 24700 CE": 334.75,
+        "Leg1 - Sell 24850 PE": -162.5
       },
-      "total": -130.0
+      "total": -204.75
+    },
+    {
+      "ts": 1784107200,
+      "legs": {
+        "Leg1 - Sell 23700 PE": -633.75,
+        "Leg1 - Sell 23550 PE": 260.0,
+        "Leg1 - Sell 24700 CE": 331.5,
+        "Leg1 - Sell 24850 PE": -162.5
+      },
+      "total": -204.75
     }
   ]
 }
