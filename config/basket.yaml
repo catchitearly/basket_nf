@@ -32,8 +32,8 @@ legs:
     lot_size: 65
     entry_price: null
     
-  - name: "Leg1 - Sell 23850 PE"
-    fyers_symbol: "NSE:NIFTY2672123850PE"
+  - name: "Leg1 - Sell 23750 PE"
+    fyers_symbol: "NSE:NIFTY2672123750PE"
     side: BUY
     lots: 1
     lot_size: 65
