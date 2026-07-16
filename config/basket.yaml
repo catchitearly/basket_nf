@@ -25,31 +25,19 @@ date_range:
 resolution: "5"   # 5-minute candles
 
 legs:
-  - name: "Leg1 - Sell 23700 PE"
-    fyers_symbol: "NSE:NIFTY2672123700PE"
+  - name: "Leg1 - Sell 23900 PE"
+    fyers_symbol: "NSE:NIFTY2672123900PE"
     side: SELL
     lots: 1
     lot_size: 65
     entry_price: null
     
-  - name: "Leg2 - buy 23600 PE"
-    fyers_symbol: "NSE:NIFTY2672123600PE"
+  - name: "Leg2 - buy 23750 PE"
+    fyers_symbol: "NSE:NIFTY2672123750PE"
     side: BUY
     lots: 1
     lot_size: 65
     entry_price: null
 
-  - name: "Leg3 - Sell 24700 CE"
-    fyers_symbol: "NSE:NIFTY2672124700CE"
-    side: SELL
-    lots: 1
-    lot_size: 65
-    entry_price: null
-    
-  - name: "Leg4 - buy 24800 PE"
-    fyers_symbol: "NSE:NIFTY2672124800CE"
-    side: BUY
-    lots: 1
-    lot_size: 65
-    entry_price: null
+ 
 
