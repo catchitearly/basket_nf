@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T07:20:33.607041Z",
+  "generated_at": "2026-07-16T07:29:34.981303Z",
   "date_range": {
     "from": "2026-07-16",
     "to": "2026-07-16"
@@ -12,7 +12,7 @@
       "side": "SELL",
       "lots": 14,
       "lot_size": 65,
-      "entry_price": 57.05
+      "entry_price": 61.25
     },
     {
       "name": "Leg2 - buy 23750 PE",
@@ -20,7 +20,7 @@
       "side": "BUY",
       "lots": 14,
       "lot_size": 65,
-      "entry_price": 37.95
+      "entry_price": 40.7
     },
     {
       "name": "Leg3 - Sell 23900 PE",
@@ -28,7 +28,7 @@
       "side": "SELL",
       "lots": 14,
       "lot_size": 65,
-      "entry_price": 38.58
+      "entry_price": 282.05
     },
     {
       "name": "Leg4 - buy 23750 PE",
@@ -36,449 +36,459 @@
       "side": "BUY",
       "lots": 14,
       "lot_size": 65,
-      "entry_price": 20.6
+      "entry_price": 363.0
     }
   ],
   "timeseries": [
     {
       "ts": 1784173500,
       "legs": {
-        "Leg1 - Sell 23900 PE": -3822.0,
-        "Leg2 - buy 23750 PE": 2502.5,
-        "Leg3 - Sell 23900 PE": -221557.7,
-        "Leg4 - buy 23750 PE": 311584.0
+        "Leg1 - Sell 23900 PE": -0.0,
+        "Leg2 - buy 23750 PE": 0.0,
+        "Leg3 - Sell 23900 PE": -0.0,
+        "Leg4 - buy 23750 PE": 0.0
       },
-      "total": 88706.8
+      "total": 0.0
     },
     {
       "ts": 1784173800,
       "legs": {
-        "Leg1 - Sell 23900 PE": -6597.5,
-        "Leg2 - buy 23750 PE": 4413.5,
-        "Leg3 - Sell 23900 PE": -229929.7,
-        "Leg4 - buy 23750 PE": 320729.5
+        "Leg1 - Sell 23900 PE": -2775.5,
+        "Leg2 - buy 23750 PE": 1911.0,
+        "Leg3 - Sell 23900 PE": -8372.0,
+        "Leg4 - buy 23750 PE": 9145.5
       },
-      "total": 88615.8
+      "total": -91.0
     },
     {
       "ts": 1784174100,
       "legs": {
-        "Leg1 - Sell 23900 PE": -8963.5,
-        "Leg2 - buy 23750 PE": 6142.5,
-        "Leg3 - Sell 23900 PE": -234661.7,
-        "Leg4 - buy 23750 PE": 327327.0
+        "Leg1 - Sell 23900 PE": -5141.5,
+        "Leg2 - buy 23750 PE": 3640.0,
+        "Leg3 - Sell 23900 PE": -13104.0,
+        "Leg4 - buy 23750 PE": 15743.0
       },
-      "total": 89844.3
+      "total": 1137.5
     },
     {
       "ts": 1784174400,
       "legs": {
-        "Leg1 - Sell 23900 PE": -15242.5,
-        "Leg2 - buy 23750 PE": 10465.0,
-        "Leg3 - Sell 23900 PE": -251542.2,
-        "Leg4 - buy 23750 PE": 345163.0
+        "Leg1 - Sell 23900 PE": -11420.5,
+        "Leg2 - buy 23750 PE": 7962.5,
+        "Leg3 - Sell 23900 PE": -29984.5,
+        "Leg4 - buy 23750 PE": 33579.0
       },
-      "total": 88843.3
+      "total": 136.5
     },
     {
       "ts": 1784174700,
       "legs": {
-        "Leg1 - Sell 23900 PE": -16607.5,
-        "Leg2 - buy 23750 PE": 11739.0,
-        "Leg3 - Sell 23900 PE": -254818.2,
-        "Leg4 - buy 23750 PE": 347529.0
+        "Leg1 - Sell 23900 PE": -12785.5,
+        "Leg2 - buy 23750 PE": 9236.5,
+        "Leg3 - Sell 23900 PE": -33260.5,
+        "Leg4 - buy 23750 PE": 35945.0
       },
-      "total": 87842.3
+      "total": -864.5
     },
     {
       "ts": 1784175000,
       "legs": {
-        "Leg1 - Sell 23900 PE": -6779.5,
-        "Leg2 - buy 23750 PE": 4595.5,
-        "Leg3 - Sell 23900 PE": -233888.2,
-        "Leg4 - buy 23750 PE": 324369.5
+        "Leg1 - Sell 23900 PE": -2957.5,
+        "Leg2 - buy 23750 PE": 2093.0,
+        "Leg3 - Sell 23900 PE": -12330.5,
+        "Leg4 - buy 23750 PE": 12785.5
       },
-      "total": 88297.3
+      "total": -409.5
     },
     {
       "ts": 1784175300,
       "legs": {
-        "Leg1 - Sell 23900 PE": -11602.5,
-        "Leg2 - buy 23750 PE": 7826.0,
-        "Leg3 - Sell 23900 PE": -247492.7,
-        "Leg4 - buy 23750 PE": 339794.0
+        "Leg1 - Sell 23900 PE": -7780.5,
+        "Leg2 - buy 23750 PE": 5323.5,
+        "Leg3 - Sell 23900 PE": -25935.0,
+        "Leg4 - buy 23750 PE": 28210.0
       },
-      "total": 88524.8
+      "total": -182.0
     },
     {
       "ts": 1784175600,
       "legs": {
-        "Leg1 - Sell 23900 PE": -9418.5,
-        "Leg2 - buy 23750 PE": 6142.5,
-        "Leg3 - Sell 23900 PE": -241714.2,
-        "Leg4 - buy 23750 PE": 333515.0
+        "Leg1 - Sell 23900 PE": -5596.5,
+        "Leg2 - buy 23750 PE": 3640.0,
+        "Leg3 - Sell 23900 PE": -20156.5,
+        "Leg4 - buy 23750 PE": 21931.0
       },
-      "total": 88524.8
+      "total": -182.0
     },
     {
       "ts": 1784175900,
       "legs": {
-        "Leg1 - Sell 23900 PE": -7780.5,
-        "Leg2 - buy 23750 PE": 5096.0,
-        "Leg3 - Sell 23900 PE": -238938.7,
-        "Leg4 - buy 23750 PE": 329966.0
+        "Leg1 - Sell 23900 PE": -3958.5,
+        "Leg2 - buy 23750 PE": 2593.5,
+        "Leg3 - Sell 23900 PE": -17381.0,
+        "Leg4 - buy 23750 PE": 18382.0
       },
-      "total": 88342.8
+      "total": -364.0
     },
     {
       "ts": 1784176200,
       "legs": {
-        "Leg1 - Sell 23900 PE": -6961.5,
-        "Leg2 - buy 23750 PE": 4322.5,
-        "Leg3 - Sell 23900 PE": -237937.7,
-        "Leg4 - buy 23750 PE": 330557.5
+        "Leg1 - Sell 23900 PE": -3139.5,
+        "Leg2 - buy 23750 PE": 1820.0,
+        "Leg3 - Sell 23900 PE": -16380.0,
+        "Leg4 - buy 23750 PE": 18973.5
       },
-      "total": 89980.8
+      "total": 1274.0
     },
     {
       "ts": 1784176500,
       "legs": {
-        "Leg1 - Sell 23900 PE": -10101.0,
-        "Leg2 - buy 23750 PE": 6279.0,
-        "Leg3 - Sell 23900 PE": -247538.2,
-        "Leg4 - buy 23750 PE": 339066.0
+        "Leg1 - Sell 23900 PE": -6279.0,
+        "Leg2 - buy 23750 PE": 3776.5,
+        "Leg3 - Sell 23900 PE": -25980.5,
+        "Leg4 - buy 23750 PE": 27482.0
       },
-      "total": 87705.8
+      "total": -1001.0
     },
     {
       "ts": 1784176800,
       "legs": {
-        "Leg1 - Sell 23900 PE": -8690.5,
-        "Leg2 - buy 23750 PE": 5414.5,
-        "Leg3 - Sell 23900 PE": -242533.2,
-        "Leg4 - buy 23750 PE": 335107.5
+        "Leg1 - Sell 23900 PE": -4868.5,
+        "Leg2 - buy 23750 PE": 2912.0,
+        "Leg3 - Sell 23900 PE": -20975.5,
+        "Leg4 - buy 23750 PE": 23523.5
       },
-      "total": 89298.3
+      "total": 591.5
     },
     {
       "ts": 1784177100,
       "legs": {
-        "Leg1 - Sell 23900 PE": -9327.5,
-        "Leg2 - buy 23750 PE": 6097.0,
-        "Leg3 - Sell 23900 PE": -241532.2,
-        "Leg4 - buy 23750 PE": 333424.0
+        "Leg1 - Sell 23900 PE": -5505.5,
+        "Leg2 - buy 23750 PE": 3594.5,
+        "Leg3 - Sell 23900 PE": -19974.5,
+        "Leg4 - buy 23750 PE": 21840.0
       },
-      "total": 88661.3
+      "total": -45.5
     },
     {
       "ts": 1784177400,
       "legs": {
-        "Leg1 - Sell 23900 PE": -8144.5,
-        "Leg2 - buy 23750 PE": 5232.5,
-        "Leg3 - Sell 23900 PE": -239848.7,
-        "Leg4 - buy 23750 PE": 332787.0
+        "Leg1 - Sell 23900 PE": -4322.5,
+        "Leg2 - buy 23750 PE": 2730.0,
+        "Leg3 - Sell 23900 PE": -18291.0,
+        "Leg4 - buy 23750 PE": 21203.0
       },
-      "total": 90026.3
+      "total": 1319.5
     },
     {
       "ts": 1784177700,
       "legs": {
-        "Leg1 - Sell 23900 PE": -10101.0,
-        "Leg2 - buy 23750 PE": 6688.5,
-        "Leg3 - Sell 23900 PE": -243397.7,
-        "Leg4 - buy 23750 PE": 335881.0
+        "Leg1 - Sell 23900 PE": -6279.0,
+        "Leg2 - buy 23750 PE": 4186.0,
+        "Leg3 - Sell 23900 PE": -21840.0,
+        "Leg4 - buy 23750 PE": 24297.0
       },
-      "total": 89070.8
+      "total": 364.0
     },
     {
       "ts": 1784178000,
       "legs": {
-        "Leg1 - Sell 23900 PE": -11693.5,
-        "Leg2 - buy 23750 PE": 7689.5,
-        "Leg3 - Sell 23900 PE": -247856.7,
-        "Leg4 - buy 23750 PE": 341614.0
+        "Leg1 - Sell 23900 PE": -7871.5,
+        "Leg2 - buy 23750 PE": 5187.0,
+        "Leg3 - Sell 23900 PE": -26299.0,
+        "Leg4 - buy 23750 PE": 30030.0
       },
-      "total": 89753.3
+      "total": 1046.5
     },
     {
       "ts": 1784178300,
       "legs": {
-        "Leg1 - Sell 23900 PE": -11784.5,
-        "Leg2 - buy 23750 PE": 7780.5,
-        "Leg3 - Sell 23900 PE": -246946.7,
-        "Leg4 - buy 23750 PE": 341295.5
+        "Leg1 - Sell 23900 PE": -7962.5,
+        "Leg2 - buy 23750 PE": 5278.0,
+        "Leg3 - Sell 23900 PE": -25389.0,
+        "Leg4 - buy 23750 PE": 29711.5
       },
-      "total": 90344.8
+      "total": 1638.0
     },
     {
       "ts": 1784178600,
       "legs": {
-        "Leg1 - Sell 23900 PE": -6006.0,
-        "Leg2 - buy 23750 PE": 3640.0,
-        "Leg3 - Sell 23900 PE": -233387.7,
-        "Leg4 - buy 23750 PE": 329283.5
+        "Leg1 - Sell 23900 PE": -2184.0,
+        "Leg2 - buy 23750 PE": 1137.5,
+        "Leg3 - Sell 23900 PE": -11830.0,
+        "Leg4 - buy 23750 PE": 17699.5
       },
-      "total": 93529.8
+      "total": 4823.0
     },
     {
       "ts": 1784178900,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1911.0,
-        "Leg2 - buy 23750 PE": 955.5,
-        "Leg3 - Sell 23900 PE": -220010.7,
-        "Leg4 - buy 23750 PE": 311857.0
+        "Leg1 - Sell 23900 PE": 1911.0,
+        "Leg2 - buy 23750 PE": -1547.0,
+        "Leg3 - Sell 23900 PE": 1547.0,
+        "Leg4 - buy 23750 PE": 273.0
       },
-      "total": 90890.8
+      "total": 2184.0
     },
     {
       "ts": 1784179200,
       "legs": {
-        "Leg1 - Sell 23900 PE": 136.5,
-        "Leg2 - buy 23750 PE": -591.5,
-        "Leg3 - Sell 23900 PE": -215096.7,
-        "Leg4 - buy 23750 PE": 305851.0
+        "Leg1 - Sell 23900 PE": 3958.5,
+        "Leg2 - buy 23750 PE": -3094.0,
+        "Leg3 - Sell 23900 PE": 6461.0,
+        "Leg4 - buy 23750 PE": -5733.0
       },
-      "total": 90299.3
+      "total": 1592.5
     },
     {
       "ts": 1784179500,
       "legs": {
-        "Leg1 - Sell 23900 PE": 3139.5,
-        "Leg2 - buy 23750 PE": -2138.5,
-        "Leg3 - Sell 23900 PE": -200582.2,
-        "Leg4 - buy 23750 PE": 288288.0
+        "Leg1 - Sell 23900 PE": 6961.5,
+        "Leg2 - buy 23750 PE": -4641.0,
+        "Leg3 - Sell 23900 PE": 20975.5,
+        "Leg4 - buy 23750 PE": -23296.0
       },
-      "total": 88706.8
+      "total": 0.0
     },
     {
       "ts": 1784179800,
       "legs": {
-        "Leg1 - Sell 23900 PE": 3139.5,
-        "Leg2 - buy 23750 PE": -1911.0,
-        "Leg3 - Sell 23900 PE": -199672.2,
-        "Leg4 - buy 23750 PE": 288242.5
+        "Leg1 - Sell 23900 PE": 6961.5,
+        "Leg2 - buy 23750 PE": -4413.5,
+        "Leg3 - Sell 23900 PE": 21885.5,
+        "Leg4 - buy 23750 PE": -23341.5
       },
-      "total": 89798.8
+      "total": 1092.0
     },
     {
       "ts": 1784180100,
       "legs": {
-        "Leg1 - Sell 23900 PE": 2002.0,
-        "Leg2 - buy 23750 PE": -1046.5,
-        "Leg3 - Sell 23900 PE": -204222.2,
-        "Leg4 - buy 23750 PE": 293384.0
+        "Leg1 - Sell 23900 PE": 5824.0,
+        "Leg2 - buy 23750 PE": -3549.0,
+        "Leg3 - Sell 23900 PE": 17335.5,
+        "Leg4 - buy 23750 PE": -18200.0
       },
-      "total": 90117.3
+      "total": 1410.5
     },
     {
       "ts": 1784180400,
       "legs": {
-        "Leg1 - Sell 23900 PE": 637.0,
-        "Leg2 - buy 23750 PE": -273.0,
-        "Leg3 - Sell 23900 PE": -211411.2,
-        "Leg4 - buy 23750 PE": 302029.0
+        "Leg1 - Sell 23900 PE": 4459.0,
+        "Leg2 - buy 23750 PE": -2775.5,
+        "Leg3 - Sell 23900 PE": 10146.5,
+        "Leg4 - buy 23750 PE": -9555.0
       },
-      "total": 90981.8
+      "total": 2275.0
     },
     {
       "ts": 1784180700,
       "legs": {
-        "Leg1 - Sell 23900 PE": -182.0,
-        "Leg2 - buy 23750 PE": 91.0,
-        "Leg3 - Sell 23900 PE": -216825.7,
-        "Leg4 - buy 23750 PE": 307125.0
+        "Leg1 - Sell 23900 PE": 3640.0,
+        "Leg2 - buy 23750 PE": -2411.5,
+        "Leg3 - Sell 23900 PE": 4732.0,
+        "Leg4 - buy 23750 PE": -4459.0
       },
-      "total": 90208.3
+      "total": 1501.5
     },
     {
       "ts": 1784181000,
       "legs": {
-        "Leg1 - Sell 23900 PE": -0.0,
-        "Leg2 - buy 23750 PE": 91.0,
-        "Leg3 - Sell 23900 PE": -216689.2,
-        "Leg4 - buy 23750 PE": 307944.0
+        "Leg1 - Sell 23900 PE": 3822.0,
+        "Leg2 - buy 23750 PE": -2411.5,
+        "Leg3 - Sell 23900 PE": 4868.5,
+        "Leg4 - buy 23750 PE": -3640.0
       },
-      "total": 91345.8
+      "total": 2639.0
     },
     {
       "ts": 1784181300,
       "legs": {
-        "Leg1 - Sell 23900 PE": -591.5,
-        "Leg2 - buy 23750 PE": 136.5,
-        "Leg3 - Sell 23900 PE": -217963.2,
-        "Leg4 - buy 23750 PE": 310082.5
+        "Leg1 - Sell 23900 PE": 3230.5,
+        "Leg2 - buy 23750 PE": -2366.0,
+        "Leg3 - Sell 23900 PE": 3594.5,
+        "Leg4 - buy 23750 PE": -1501.5
       },
-      "total": 91664.3
+      "total": 2957.5
     },
     {
       "ts": 1784181600,
       "legs": {
-        "Leg1 - Sell 23900 PE": 273.0,
-        "Leg2 - buy 23750 PE": -318.5,
-        "Leg3 - Sell 23900 PE": -217417.2,
-        "Leg4 - buy 23750 PE": 308581.0
+        "Leg1 - Sell 23900 PE": 4095.0,
+        "Leg2 - buy 23750 PE": -2821.0,
+        "Leg3 - Sell 23900 PE": 4140.5,
+        "Leg4 - buy 23750 PE": -3003.0
       },
-      "total": 91118.3
+      "total": 2411.5
     },
     {
       "ts": 1784181900,
       "legs": {
-        "Leg1 - Sell 23900 PE": 2866.5,
-        "Leg2 - buy 23750 PE": -2229.5,
-        "Leg3 - Sell 23900 PE": -210455.7,
-        "Leg4 - buy 23750 PE": 300982.5
+        "Leg1 - Sell 23900 PE": 6688.5,
+        "Leg2 - buy 23750 PE": -4732.0,
+        "Leg3 - Sell 23900 PE": 11102.0,
+        "Leg4 - buy 23750 PE": -10601.5
       },
-      "total": 91163.8
+      "total": 2457.0
     },
     {
       "ts": 1784182200,
       "legs": {
-        "Leg1 - Sell 23900 PE": 409.5,
-        "Leg2 - buy 23750 PE": -546.0,
-        "Leg3 - Sell 23900 PE": -218600.2,
-        "Leg4 - buy 23750 PE": 309764.0
+        "Leg1 - Sell 23900 PE": 4231.5,
+        "Leg2 - buy 23750 PE": -3048.5,
+        "Leg3 - Sell 23900 PE": 2957.5,
+        "Leg4 - buy 23750 PE": -1820.0
       },
-      "total": 91027.3
+      "total": 2320.5
     },
     {
       "ts": 1784182500,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1001.0,
-        "Leg2 - buy 23750 PE": -910.0,
-        "Leg3 - Sell 23900 PE": -216325.2,
-        "Leg4 - buy 23750 PE": 308035.0
+        "Leg1 - Sell 23900 PE": 4823.0,
+        "Leg2 - buy 23750 PE": -3412.5,
+        "Leg3 - Sell 23900 PE": 5232.5,
+        "Leg4 - buy 23750 PE": -3549.0
       },
-      "total": 91800.8
+      "total": 3094.0
     },
     {
       "ts": 1784182800,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1501.5,
-        "Leg2 - buy 23750 PE": -1319.5,
-        "Leg3 - Sell 23900 PE": -215688.2,
-        "Leg4 - buy 23750 PE": 307534.5
+        "Leg1 - Sell 23900 PE": 5323.5,
+        "Leg2 - buy 23750 PE": -3822.0,
+        "Leg3 - Sell 23900 PE": 5869.5,
+        "Leg4 - buy 23750 PE": -4049.5
       },
-      "total": 92028.3
+      "total": 3321.5
     },
     {
       "ts": 1784183100,
       "legs": {
-        "Leg1 - Sell 23900 PE": 1228.5,
-        "Leg2 - buy 23750 PE": -1410.5,
-        "Leg3 - Sell 23900 PE": -217235.2,
-        "Leg4 - buy 23750 PE": 308899.5
+        "Leg1 - Sell 23900 PE": 5050.5,
+        "Leg2 - buy 23750 PE": -3913.0,
+        "Leg3 - Sell 23900 PE": 4322.5,
+        "Leg4 - buy 23750 PE": -2684.5
       },
-      "total": 91482.3
+      "total": 2775.5
     },
     {
       "ts": 1784183400,
       "legs": {
-        "Leg1 - Sell 23900 PE": -2320.5,
-        "Leg2 - buy 23750 PE": 1092.0,
-        "Leg3 - Sell 23900 PE": -228337.2,
-        "Leg4 - buy 23750 PE": 321321.0
+        "Leg1 - Sell 23900 PE": 1501.5,
+        "Leg2 - buy 23750 PE": -1410.5,
+        "Leg3 - Sell 23900 PE": -6779.5,
+        "Leg4 - buy 23750 PE": 9737.0
       },
-      "total": 91755.3
+      "total": 3048.5
     },
     {
       "ts": 1784183700,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1319.5,
-        "Leg2 - buy 23750 PE": 182.0,
-        "Leg3 - Sell 23900 PE": -225698.2,
-        "Leg4 - buy 23750 PE": 318818.5
+        "Leg1 - Sell 23900 PE": 2502.5,
+        "Leg2 - buy 23750 PE": -2320.5,
+        "Leg3 - Sell 23900 PE": -4140.5,
+        "Leg4 - buy 23750 PE": 7234.5
       },
-      "total": 91982.8
+      "total": 3276.0
     },
     {
       "ts": 1784184000,
       "legs": {
-        "Leg1 - Sell 23900 PE": -2229.5,
-        "Leg2 - buy 23750 PE": 1001.0,
-        "Leg3 - Sell 23900 PE": -229429.2,
-        "Leg4 - buy 23750 PE": 321594.0
+        "Leg1 - Sell 23900 PE": 1592.5,
+        "Leg2 - buy 23750 PE": -1501.5,
+        "Leg3 - Sell 23900 PE": -7871.5,
+        "Leg4 - buy 23750 PE": 10010.0
       },
-      "total": 90936.3
+      "total": 2229.5
     },
     {
       "ts": 1784184300,
       "legs": {
-        "Leg1 - Sell 23900 PE": -1319.5,
-        "Leg2 - buy 23750 PE": 409.5,
-        "Leg3 - Sell 23900 PE": -227017.7,
-        "Leg4 - buy 23750 PE": 320320.0
+        "Leg1 - Sell 23900 PE": 2502.5,
+        "Leg2 - buy 23750 PE": -2093.0,
+        "Leg3 - Sell 23900 PE": -5460.0,
+        "Leg4 - buy 23750 PE": 8736.0
       },
-      "total": 92392.3
+      "total": 3685.5
     },
     {
       "ts": 1784184600,
       "legs": {
-        "Leg1 - Sell 23900 PE": -455.0,
-        "Leg2 - buy 23750 PE": -546.0,
-        "Leg3 - Sell 23900 PE": -226062.2,
-        "Leg4 - buy 23750 PE": 318500.0
+        "Leg1 - Sell 23900 PE": 3367.0,
+        "Leg2 - buy 23750 PE": -3048.5,
+        "Leg3 - Sell 23900 PE": -4504.5,
+        "Leg4 - buy 23750 PE": 6916.0
       },
-      "total": 91436.8
+      "total": 2730.0
     },
     {
       "ts": 1784184900,
       "legs": {
-        "Leg1 - Sell 23900 PE": 3094.0,
-        "Leg2 - buy 23750 PE": -2775.5,
-        "Leg3 - Sell 23900 PE": -211411.2,
-        "Leg4 - buy 23750 PE": 302484.0
+        "Leg1 - Sell 23900 PE": 6916.0,
+        "Leg2 - buy 23750 PE": -5278.0,
+        "Leg3 - Sell 23900 PE": 10146.5,
+        "Leg4 - buy 23750 PE": -9100.0
       },
-      "total": 91391.3
+      "total": 2684.5
     },
     {
       "ts": 1784185200,
       "legs": {
-        "Leg1 - Sell 23900 PE": 773.5,
-        "Leg2 - buy 23750 PE": -1456.0,
-        "Leg3 - Sell 23900 PE": -221603.2,
-        "Leg4 - buy 23750 PE": 313631.5
+        "Leg1 - Sell 23900 PE": 4595.5,
+        "Leg2 - buy 23750 PE": -3958.5,
+        "Leg3 - Sell 23900 PE": -45.5,
+        "Leg4 - buy 23750 PE": 2047.5
       },
-      "total": 91345.8
+      "total": 2639.0
     },
     {
       "ts": 1784185500,
       "legs": {
-        "Leg1 - Sell 23900 PE": -500.5,
-        "Leg2 - buy 23750 PE": -500.5,
-        "Leg3 - Sell 23900 PE": -225743.7,
-        "Leg4 - buy 23750 PE": 319728.5
+        "Leg1 - Sell 23900 PE": 3321.5,
+        "Leg2 - buy 23750 PE": -3003.0,
+        "Leg3 - Sell 23900 PE": -4186.0,
+        "Leg4 - buy 23750 PE": 8144.5
       },
-      "total": 92983.8
+      "total": 4277.0
     },
     {
       "ts": 1784185800,
       "legs": {
-        "Leg1 - Sell 23900 PE": -4413.5,
-        "Leg2 - buy 23750 PE": 2275.0,
-        "Leg3 - Sell 23900 PE": -237118.7,
-        "Leg4 - buy 23750 PE": 330694.0
+        "Leg1 - Sell 23900 PE": -591.5,
+        "Leg2 - buy 23750 PE": -227.5,
+        "Leg3 - Sell 23900 PE": -15561.0,
+        "Leg4 - buy 23750 PE": 19110.0
       },
-      "total": 91436.8
+      "total": 2730.0
     },
     {
       "ts": 1784186100,
       "legs": {
-        "Leg1 - Sell 23900 PE": -3731.0,
-        "Leg2 - buy 23750 PE": 1865.5,
-        "Leg3 - Sell 23900 PE": -236072.2,
-        "Leg4 - buy 23750 PE": 329784.0
+        "Leg1 - Sell 23900 PE": 91.0,
+        "Leg2 - buy 23750 PE": -637.0,
+        "Leg3 - Sell 23900 PE": -14514.5,
+        "Leg4 - buy 23750 PE": 18200.0
       },
-      "total": 91846.3
+      "total": 3139.5
     },
     {
       "ts": 1784186400,
       "legs": {
-        "Leg1 - Sell 23900 PE": -4004.0,
-        "Leg2 - buy 23750 PE": 1956.5,
-        "Leg3 - Sell 23900 PE": -234752.7,
-        "Leg4 - buy 23750 PE": 329101.5
+        "Leg1 - Sell 23900 PE": -1137.5,
+        "Leg2 - buy 23750 PE": 45.5,
+        "Leg3 - Sell 23900 PE": -18018.0,
+        "Leg4 - buy 23750 PE": 21567.0
       },
-      "total": 92301.3
+      "total": 2457.0
+    },
+    {
+      "ts": 1784186700,
+      "legs": {
+        "Leg1 - Sell 23900 PE": -2639.0,
+        "Leg2 - buy 23750 PE": 1183.0,
+        "Leg3 - Sell 23900 PE": -22295.0,
+        "Leg4 - buy 23750 PE": 26754.0
+      },
+      "total": 3003.0
     }
   ]
 }
