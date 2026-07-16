@@ -28,14 +28,14 @@ legs:
   - name: "Leg1 - Sell 23900 PE"
     fyers_symbol: "NSE:NIFTY2672124300CE"
     side: SELL
-    lots: 1
+    lots: 15
     lot_size: 65
     entry_price: 59.27
     
   - name: "Leg2 - buy 23750 PE"
     fyers_symbol: "NSE:NIFTY26JUL24300CE"
     side: BUY
-    lots: 1
+    lots: 15
     lot_size: 65
     entry_price: 138.42
 
