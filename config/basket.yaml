@@ -22,7 +22,7 @@ date_range:
   from: "2026-07-16"
   to: "2026-07-16"
 
-resolution: "5"   # 5-minute candles
+resolution: "1"   # 5-minute candles
 
 legs:
   - name: "Leg1 - Sell 23900 PE"
